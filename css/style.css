@@ -1,0 +1,257 @@
+/* RESET */
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(0, 0, 0);
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  opacity: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(91, 92, 92); 
+  border-radius: 10px;
+}
+
+/* TOPO */
+#topo {
+	background-color: rgb(17, 17, 17);
+	border-bottom: 4px solid rgb(91, 92, 92);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 14px;
+	font-size: 18px;
+	color: #708090;
+}
+#topo p {
+	margin: 0;
+}
+
+/* BANNER */
+#banner {
+	background-image: url("../img/banner.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#logo {
+	margin-top: 50px;
+}
+
+/* MENU */
+#menu {
+	background-color: rgb(17, 17, 17);
+	border-bottom: 4px solid rgb(91, 92, 92);
+	margin: 0;
+	padding: 14px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#paginas ul {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#paginas ul li {
+	margin: 0;
+	padding: 0;
+}
+#paginas ul li a {
+	padding: 14px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	font-size: 18px;
+	color: #708090;
+}
+#menu a:hover {
+	color: #383636;
+}
+#mconta a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #708090;
+}
+
+/* EQUIPE */
+#equipe {
+	margin: auto;
+	margin-top: 50px;
+	width: 80%;
+}
+#grupo {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.membro {
+	margin: 15px;
+}
+
+/* CONTEUDO */
+
+#conteudo {
+	height: auto;
+	min-height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#conteudo .botao {
+	margin: 10px;
+	padding: 12px;
+	border-radius: 5px;
+	background-color: rgb(235, 232, 232);
+}
+#conteudo .inputt {
+	padding: 12px;
+	border-radius: 5px;
+	width: 70%;
+	height: 25px;
+	margin: 50px;
+}
+#conteudo i {
+	margin: 5px;
+	color: #708090;
+}
+#conteudo-loja {
+	width: 100%;
+	min-height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#noticias {
+	border-radius: 10px;
+	margin: 25px;
+	width: 60%;
+	background-color: white;
+	height: auto;
+}
+#noticias a {
+	text-decoration: none;
+	color: #708090;
+}
+#atualizacoes {
+	border-radius: 10px;
+	margin: 25px;
+	width: 60%;
+	background-color: white;
+	height: auto;
+}
+#atualizacoes a {
+	text-decoration: none;
+	color: #708090;
+}
+#discord {
+	border-radius: 10px;
+	margin: 25px;
+	background-color: white;
+	width: 20%;
+	min-width: 285px;
+	min-height: 310px;
+}
+#discord iframe {
+	min-height: 310px;
+}
+#entrar {
+	margin: 25px;
+	border-radius: 10px;
+	background-color: rgb(146, 151, 160);
+	width: 40%;
+	height: auto;
+	text-align: center;
+}
+#entrar p {
+	line-height: 5px;
+}
+
+/* LOJA */
+#loja {
+	background-color: rgb(38, 186, 255);
+	width: 20%;
+	min-width: 250px;
+	height: auto;
+	min-height: 380;
+	margin: 25px;
+	margin-top: 60px;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 1px 1px 1px rgb(219, 217, 217);
+}
+#loja p {
+	text-align: left;
+	margin-left: 10px;
+}
+#loja a {
+	padding: 4px;
+	background-color: rgb(14, 14, 14);
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+	margin: auto;
+}
+
+
+/* FOOTER */
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: rgb(17, 17, 17);
+	color: #708090;
+}
+footer a {
+	padding: 14px;
+	text-decoration: none;
+	color: #708090;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+	#topo {
+		flex-direction: column;
+		align-items: center;
+	}
+	#noticias {
+		width: 90%;
+	}
+	#atualizacoes {
+		width: 90%;
+	}
+	#paginas ul li a {
+		padding: 12px;
+	}
+	#menu {
+		flex-direction: column;
+		align-items: center;
+	}
+	#conteudo {
+		align-items: center;
+		flex-direction: column;
+	}
+	#discord {
+		width: 90%;
+	}
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+}
